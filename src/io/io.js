@@ -2,6 +2,7 @@
     const response = await fetch(path, {cache: "no-cache"});
 
     if (!response.ok) {
+        handler ??= console.warn;
         handler(response);
         return;
     }
@@ -13,6 +14,7 @@ export async function loadHtmlAsync(path, handler) {
     const response = await fetch(path);
 
     if (!response.ok) {
+        handler ??= console.warn;
         handler(response);
         return;
     }

@@ -3,6 +3,7 @@
 
     if (!response.ok) {
         handler(response);
+        return;
     }
 
     return await JSON.parse(await response.text());
@@ -13,6 +14,7 @@ export async function loadHtmlAsync(path, handler) {
 
     if (!response.ok) {
         handler(response);
+        return;
     }
 
     return await response.text();

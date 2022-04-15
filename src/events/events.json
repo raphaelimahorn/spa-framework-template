@@ -1,0 +1,25 @@
+﻿{
+  "events": [
+    {
+      "title": "Example Event",
+      "from": "2025-05-28",
+      "to": "2025-05-29",
+      "where": "Somewhere near you",
+      "description": "Some description."
+    },
+    {
+      "title": "A cancelled event",
+      "from": "2025-06-11",
+      "to": "2025-06-12",
+      "where": "Nowhere",
+      "canceled": true,
+      "description": "Unfortunatelly this event is canceled"
+    },
+    {
+      "title": "AAR",
+      "from": "2026-02",
+      "where": "TBD",
+      "tbd": true
+    }
+  ]
+}

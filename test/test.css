@@ -1,0 +1,60 @@
+﻿* {
+    font-family: sans-serif;
+}
+
+.passed::before {
+    content: '☑ ';
+    color: green;
+    display: contents;
+}
+
+.failed::before {
+    content: '☒ ';
+    color: red;
+    display: contents;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 40px;
+}
+
+.test {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+p + h3 {
+    margin-top: 40px;
+}
+
+.summary {
+    margin-left: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary > span {
+    margin-left: 20px;
+}
+
+.summary .passing {
+    color: green;
+}
+
+.summary .failing {
+    color: red;
+}
+
+.summary .throwing {
+    color: orangered;
+}
+
+.subtest{
+    font-size: smaller;
+    margin-left: 80px;
+}
